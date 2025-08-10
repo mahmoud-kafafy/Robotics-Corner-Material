@@ -4,7 +4,7 @@
 
 # 1. $? — Exit status of last command
 ls /tmp        # This should succeed
-echo $?        # Prints 0 (success)
+echo $?        # Prints 0 (success)  {? is variable for exit status}
 ls /abc        # This should fail
 echo $?        # Prints non-zero (error)
 
