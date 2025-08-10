@@ -15,6 +15,9 @@ mkdir -p "$LOG_DIR"
 #    %Y = year (4 digits), %m = month, %d = day
 #    %H = hour (24-hour), %M = minute, %S = second
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+# 3. Current year
+CURRENT_YEAR=$(date +%Y)
+echo "The current year is $CURRENT_YEAR"
 
 # 4️⃣ Create the log file path using the directory + timestamp
 LOG_FILE="$LOG_DIR/journal_$TIMESTAMP.txt"
