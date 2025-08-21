@@ -44,6 +44,17 @@ int main() {
     }
     cout << "\n\n";
 
+    // -------- std::array example --------
+    array<int, 5> stdArr = {5, 10, 15, 20, 25};
+    cout << "std::array elements: ";
+    for (int n : stdArr) {
+        cout << n << " ";
+    }
+    cout << "\n";
+
+    cout << "First element: " << stdArr.front() << ", Last element: " << stdArr.back() << "\n\n";
+
+
     // -------- Vector example --------
     vector<int> vec = {1, 2, 3, 4, 5};
     cout << "Vector elements: ";
