@@ -14,7 +14,21 @@ void registerEvent(void (*callback)()) {
     }
 }
 
+/*
+// Library / framework / driver
+void registerEvent(void (*callback)()) {
+    // Run in another thread (simulate async event)
+    thread t([callback]() {
+        this_thread::sleep_for(2s); // simulate waiting for event
+        callback(); // fire callback
+    });
+    t.detach(); // let it run independently
+}
+*/
+
 int main() {
     // You only register — not call yourself
     registerEvent(onButtonPressedA);
 }
+
+
