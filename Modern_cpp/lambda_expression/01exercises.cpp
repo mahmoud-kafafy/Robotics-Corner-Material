@@ -1,3 +1,16 @@
+/*
+👉 Task:
+
+Create a vector of integers.
+
+Use a lambda with:
+
+for_each to print elements.
+
+find_if to find the first even number.
+
+sort with a lambda (descending order).
+*/
 #include <iostream>
 #include <vector>
 #include <algorithm>
