@@ -1,3 +1,15 @@
+/*
+👉 Task:
+
+Ask the student to allocate an array dynamically using new.
+
+Fill it with numbers.
+
+Print the values.
+
+Finally, delete the memory.
+*/
+
 #include <iostream>
 using namespace std;
 
