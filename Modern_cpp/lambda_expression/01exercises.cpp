@@ -19,17 +19,7 @@ int main() {
     modifyX(); // x becomes 15
     cout << "x in main = " << x << endl; // Output: 15
 
-    cout << "\n=== 3. Lambda with for_each ===" << endl;
-    vector<int> v = {1, 2, 3, 4, 5};
-    for_each(v.begin(), v.end(), [](int n){ cout << n*2 << " "; });
-    cout << endl; // Output: 2 4 6 8 10
-
-    cout << "\n=== 4. Lambda modifying external variable ===" << endl;
-    int total = 0;
-    for_each(v.begin(), v.end(), [&total](int n){ total += n; });
-    cout << "Total = " << total << endl; // Total = 15
-
-    cout << "\n=== 5. Lambda as callback ===" << endl;
+    cout << "\n=== 3. Lambda as callback ===" << endl;
     auto compute = [](int a, int b, auto callback) {
         cout << "Result = " << callback(a, b) << endl;
     };

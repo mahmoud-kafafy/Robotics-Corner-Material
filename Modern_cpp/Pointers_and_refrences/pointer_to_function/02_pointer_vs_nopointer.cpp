@@ -48,4 +48,6 @@ int main() {
     }
 }
 
+// if you need to add new functions you will add another if
+
 */
