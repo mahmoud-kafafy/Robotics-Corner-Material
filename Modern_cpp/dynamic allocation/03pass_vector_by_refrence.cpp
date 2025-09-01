@@ -7,7 +7,7 @@ using namespace std;
 void inputStudents(vector<string>& students, int n) {
     students.clear(); // make sure it's empty before adding
     cout << "Enter " << n << " student names:\n";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {   // can't make range based or students.size() becouse vector is empty so cant loop first time 
         string name;
         cin >> name;
         students.push_back(name);
