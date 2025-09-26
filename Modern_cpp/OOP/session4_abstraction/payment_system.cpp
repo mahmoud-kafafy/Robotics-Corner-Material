@@ -46,5 +46,23 @@ int main() {
     checkout(paypal, 50.0);
     checkout(cash, 20.0);
 
+
+    /*
+        // Create derived objects, but store them in Payment* (base class pointers)
+        Payment* p1 = new CreditCardPayment();
+        Payment* p2 = new PayPalPayment();
+        Payment* p3 = new CashPayment();
+
+        // All work via base class
+        checkout(p1, 100.0);
+        checkout(p2, 50.0);
+        checkout(p3, 20.0);
+
+        // Clean up
+        delete p1;
+        delete p2;
+        delete p3;
+    */
+
     return 0;
 }
