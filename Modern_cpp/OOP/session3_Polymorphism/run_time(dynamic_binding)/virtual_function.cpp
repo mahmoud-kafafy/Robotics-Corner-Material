@@ -1,3 +1,12 @@
+/*
+⚖️ Main Difference
+
+Without polymorphism → You must manually choose the type (Dog d; Cat c;) and handle each separately.
+
+With polymorphism → You can work with many derived types through one base interface, making the code flexible, scalable, and easier to extend.
+*/
+
+
 #include <iostream>
 using namespace std;
 
